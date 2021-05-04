@@ -1,0 +1,101 @@
+:root {
+	--principalColor: #284B5E;
+	--orangeColor: #FFA827;
+	--whiteColor: #F9F9F9;
+	--blueColor: #21C7DB;
+}
+
+body {
+	font-family: 'Poppins';
+	margin: 0;
+	width: 100%;
+	background-color: var(--principalColor);
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: var(--principalColor);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 5%;
+	padding-top: 1%;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: var(--whiteColor);
+	text-align: center;
+	text-decoration: none;
+	height: 100%;
+	padding-right: 5%;
+	
+	transition: 0.5s;
+}
+
+.navbar a:hover {
+	color: var(--blueColor);
+}
+
+.main {
+	padding-top: 10%;
+	
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	/* Used in this example to enable scrolling */
+}
+
+.mainImage {
+	width: 50%;
+	padding-right: 5%;
+}
+
+.mainText{
+	width: 50%;
+	color: var(--whiteColor);
+	font-size: 200%;
+	padding-left: 10%;
+}
+#people{
+	width: 100%;
+}
+#logo {
+	height: 100%;
+	float: left;
+	padding-left: 5%;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: var(--whiteColor);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: var(--orangeColor);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ffa927a1;
+}
+
+.info{
+	background-color: var(--whiteColor);
+	text-align: center;
+	color: var(--principalColor);
+	font-weight: bold;
+	font-size: 500%;
+}
