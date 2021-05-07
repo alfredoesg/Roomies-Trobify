@@ -11,29 +11,49 @@
 
 <body>
 	<div class="navbar">
-		<img id="logo" src="Resources/Images/logo.png" alt="Logo">
-		<a href="#home">¿Quienes somos?</a>
-		<a href="#news">Ofrece un Inmueble</a>
-	  </div>
-	  
-	  <div class="main">
-		  <div class="mainText" >
+		<div class="navbarLogo">
+			<a class="logoboton" href="index.html"><img id="logo" src="Resources/Images/logo.png" alt="Logo"></a>
+		</div>
+		<div class="navbarOptions">
+			<a href="" id="iniciarSesion">Inicia sesion</a>
+			<a href="#info">¿Quienes somos?</a>
+			<a href="#news">Ofrece un Inmueble</a>
+
+		</div>
+
+
+	</div>
+
+	<div class="main">
+		<div class="mainText">
 			<p>
-				¿Buscas un lugar  donde <br>
+				¿Buscas un lugar donde <br>
 				vivir, o pasar una <br>
 				temporada? <br>
 			</p>
-		  </div>
-		  
-		  <div class="mainImage" >
-			<img id="people" src="Resources/Images/mainPeople.png" alt="Logo">
-		  </div>
-	  </div>
-	  
+			<div class="mainBuscador">
+				<div class="divSelect">
+					<select>
+						<option selected>Venta</option>
+					</select>
+				</div>
+				<div class="divBuscador">
+					<input class="buscador" type="text" placeholder="Departamento en CDMX">
+					<a  href="resultadosBusqueda.html" ><img class="lupita" src="Resources/Images/lupititititita.png"></a>
+				</div>
 
-	  <div class="info" >
-		  <p>¿Quienes somos?</p>
-	  </div>
+			</div>
+		</div>
+
+		<div class="mainImage">
+			<img id="people" src="Resources/Images/mainPeople.png" alt="Logo">
+		</div>
+	</div>
+
+
+	<div class="info" id="info">
+		<p>¿Quienes somos?</p>
+	</div>
 
 </body>
 

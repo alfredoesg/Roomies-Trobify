@@ -3,13 +3,17 @@
 	--orangeColor: #FFA827;
 	--whiteColor: #F9F9F9;
 	--blueColor: #21C7DB;
+	--greyColor: #AFAFAF;
+}
+html{
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Poppins';
 	margin: 0;
 	width: 100%;
-	background-color: var(--principalColor);
+	background-color: var(--whiteColor);
 }
 
 .navbar {
@@ -20,19 +24,63 @@ body {
 	width: 100%;
 	height: 5%;
 	padding-top: 1%;
+	display: flex;
+	padding-bottom: 1%;
 }
 
-.navbar a {
+.navbarOptions{
 	float: right;
 	display: block;
-	color: var(--whiteColor);
-	text-align: center;
-	text-decoration: none;
 	height: 100%;
 	padding-right: 5%;
-	
-	transition: 0.5s;
+	width: 80%;
 }
+
+a{
+	text-decoration: none;
+	color: var(--whiteColor);
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	float: right;
+}
+
+input[type="text"] {
+	background-color: var(--whiteColor);
+	border-radius: 1em;
+	text-align: center;
+	color: var(--greyColor);
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	font-size: 1em;
+	border-color: transparent;
+	outline-width: 0
+  }
+  
+  
+  input[type="text"]:focus {
+	color: var(--principalColor);
+  }
+
+  .searchIcon {
+	padding: 0.5rem;
+  }
+
+
+.divBuscador{
+	width: 90%;
+	padding-right: 10%;
+}
+
+.divSelect{
+	width: 10%;
+}
+
+.mainBuscador{
+	display: flex;
+}
+
 
 .navbar a:hover {
 	color: var(--blueColor);
@@ -40,13 +88,15 @@ body {
 
 .main {
 	padding-top: 10%;
-	
+	background-color: var(--principalColor);
 	display: flex;
 	justify-content: center;
 	height: 100%;
 	width: 100%;
-	/* Used in this example to enable scrolling */
+	
 }
+
+
 
 .mainImage {
 	width: 50%;
@@ -68,28 +118,37 @@ body {
 	padding-left: 5%;
 }
 
-/* width */
+.navbarLogo{
+	height: 100%;
+	width: 20%;
+}
+
 
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
-/* Track */
-
 ::-webkit-scrollbar-track {
 	background: var(--whiteColor);
 }
-
-/* Handle */
 
 ::-webkit-scrollbar-thumb {
 	background: var(--orangeColor);
 }
 
-/* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
 	background: #ffa927a1;
+}
+
+
+
+.lupita:hover{
+	cursor: pointer;
+}
+
+.logoboton{
+	height: 100%;
+	float: left;
 }
 
 .info{
@@ -98,4 +157,73 @@ body {
 	color: var(--principalColor);
 	font-weight: bold;
 	font-size: 500%;
+}
+
+#iniciarSesion{
+	background-color: var(--blueColor);
+	border-radius: 2em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	padding-right:  5%;
+	top: 0;
+}
+
+#iniciarSesion:hover{
+	color: var(--whiteColor);
+	transition: 0.5;
+}
+
+.resultadosInmuebles{
+	width: 50%;
+}
+
+#mapita{
+	width: 50%;
+	height: 100%;
+}
+
+#gugelmaps{
+	width: 100%;
+	height: 400px;
+}
+
+.fichaMuestra{
+	margin: 5%;
+	padding: 5%;
+	border-radius: 1em;
+	background-color: white;
+	box-shadow: 1px 1px 10px gray;
+	transition: all 0.4s ease-in-out;
+	display: flex;
+}
+
+.imagenMuestra img {
+	width: 100%;
+	border-radius: 1em;
+}
+
+.imagenMuestra{
+	width: 40%;
+	
+}
+
+.infoMuestra{
+	width: 60%;
+	padding-left: 5%;
+}
+
+.fichaMuestra:hover{
+	transform: scale(1.1);
+	
+}
+
+.mainResultados{
+	padding-top: 10%;
+	background-color: var(--whiteColor);
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	
 }
