@@ -74,11 +74,26 @@ input[type="text"] {
 }
 
 .divSelect{
+	display: flex;
 	width: 10%;
+	background-color: var(--whiteColor);
+	border-radius: 2em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	padding-right:  5%;
+	top: 0;
 }
 
 .mainBuscador{
 	display: flex;
+}
+
+
+.radiobutt{
+	display: flex;
+	align-items: stretch;
+	padding: 20px 0;
 }
 
 

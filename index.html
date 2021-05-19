@@ -32,12 +32,21 @@
 				vivir, o pasar una <br>
 				temporada? <br>
 			</p>
-			<div class="mainBuscador">
+			<div class="filtros">
 				<div class="divSelect">
-					<select>
-						<option selected>Venta</option>
+					<select name="TipoInmueble">
+						<option value="1">Casa</option>
+						<option value="2">Departamento</option>
 					</select>
 				</div>
+				<div class="radiobutt">
+					<input type="radio" name="tipo" id="Venta" checked>
+					<label for="Venta">Venta</label> 
+					<input type="radio" name="tipo" value="Renta">
+					<label for="Renta">Renta</label>
+				</div>
+			</div>
+			<div class="mainBuscador">
 				<div class="divBuscador">
 					<input class="buscador" type="text" placeholder="Departamento en CDMX">
 					<a  href="resultadosBusqueda.html" ><img class="lupita" src="Resources/Images/lupititititita.png"></a>
