@@ -340,6 +340,21 @@ input[type="text"] {
 	transition: 0.5;
 }
 
+#verficha{
+	background-color: var(--blueColor);
+	border-radius: 2em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	padding-right:  5%;
+	top: 0;
+}
+
+#verficha:hover{
+	color: var(--whiteColor);
+	transition: 0.5;
+}
+
 .envioSugerencias{
 	width: 50%;
 }
