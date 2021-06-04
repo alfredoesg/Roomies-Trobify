@@ -196,11 +196,19 @@ input[type="text"] {
 #mapita{
 	width: 50%;
 	height: 100%;
+	margin-right: 10px;
 }
 
-#gugelmaps{
+#mapainm{
+	width: 70%;
+	height: 30%;
+	margin: auto;
+}
+
+#map{
 	width: 100%;
 	height: 400px;
+	margin-right: 10px;
 }
 
 .fichaMuestra{
@@ -336,6 +344,21 @@ input[type="text"] {
 }
 
 #descficha:hover{
+	color: var(--whiteColor);
+	transition: 0.5;
+}
+
+#whatsapp{
+	background-color: #189d0e;
+	border-radius: 2em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	padding-right:  5%;
+	top: 0;
+}
+
+#whatsapp:hover{
 	color: var(--whiteColor);
 	transition: 0.5;
 }
