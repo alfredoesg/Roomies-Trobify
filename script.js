@@ -5,3 +5,7 @@ function initMap(){
       center: coord
     });
 }
+
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLenguage:'es',layout: google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
