@@ -26,13 +26,18 @@
     </div>
 
     <div class="mainESugerencias">
+        <form action="enviar.php" method="POST">
         <div class="envioDeSugerencias">
+            <input type="texto" name="nombre" id="nombre" class="nombre" placeholder="Nombre">
+            <input type="mail" name="mail" id="mail" class="email" placeholder="Correo">
+            <input type="phone" name="phone" id="phone" class="phone" placeholder="Teléfono">
             <div class="ComentariosSugerencias">
                 <h2>Envíanos tus sugerencias</h2>
-                <textarea name="sugerencias" rows="25" cols="100" placeholder="Escribe aquí tus comentarios"></textarea>   
+                <textarea name="sugerencias" class="sugerencias" id="sugerencias" rows="25" cols="100" placeholder="Escribe aquí tus comentarios"></textarea>   
             </div>
-            <a href="" id="enviar">Enviar</a>
+            <button type="submit">Enviar</button>
         </div>
+        </form>
     </div>
 </body>
 
